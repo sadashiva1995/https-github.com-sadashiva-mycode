@@ -11,7 +11,8 @@ public class Department {
 	@Id
 	@Column(name = "Dept_Id")
 	private int dept_Id;
-	@Column(name = "Dept_Id")
+
+	@Column(name = "dept_Name")
 	private String dept_Name;
 
 	public int getDept_Id() {

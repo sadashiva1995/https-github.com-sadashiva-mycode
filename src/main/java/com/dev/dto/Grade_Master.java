@@ -1,9 +1,24 @@
 package com.dev.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="grade_master")
 public class Grade_Master {
+	@Column(name="grade_Code")
+	@Id
 	private String grade_Code;
+	
+	@Column(name="description")
 	private String description;
+	
+	@Column(name="min_Salary")
 	private int min_Salary;
+	
+	@Column(name="min_Salary")
 	private int max_Salary;
 
 	public String getGrade_Code() {
