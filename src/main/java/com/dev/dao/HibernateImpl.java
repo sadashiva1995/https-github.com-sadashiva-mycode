@@ -23,7 +23,8 @@ public class HibernateImpl implements EmpInfoDAO
 		
 		Employee emp=new Employee();
 		User_Master us=new User_Master();
-
+		
+	
 		session.getTransaction().begin();
 		if(UserId.equals(us.getUserId())&&UserPassword.equals(us.getUserPassword()))
 		{
@@ -94,10 +95,10 @@ try {
 		Session session=factory.openSession();
 
 		session.getTransaction().begin();
-		Employee emp=session.get(Employee.class,Emp_ID);
-		emp.setEmp_First_Name("raam");
-		emp.setEmp_ID(Emp_ID);
-		emp.setEmp_Last_Name("raghu");
+		Employee emp=session.get(Employee.class,"5");
+		//emp.setEmp_ID("5");
+		emp.setEmp_First_Name("shiva");
+		emp.setEmp_Last_Name("nk");
 		 session.getTransaction().commit();
 		// session.close();
 		 
@@ -108,7 +109,7 @@ try {
 		Session session=factory.openSession();
 
 		session.getTransaction().begin();
-		 String qry="select * from Employee emp";
+		 String qry=" from Employee emp";
 			Query query=session.createQuery(qry);
 			 
 			List<Employee> emp=query.list();

@@ -13,7 +13,7 @@ public class CreateProfileTest {
 		SessionFactory factory=HibernateUtils.getSessionFactory();
 		Session session=  factory.openSession();
 		EmpInfoDAO emp1=UserInfoDAOFactory.getDatabase();
-		Employee emp=null;
+		Employee emp=new Employee();
 
 	boolean b =emp1.createEmpProfile(emp);
 	if(b==true) {

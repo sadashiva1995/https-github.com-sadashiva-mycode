@@ -12,45 +12,64 @@
 			<legend>Create Profile</legend>
 			<table>
 				<tr>
-					<td>Regno</td>
-					<td><input type="text" name="regno" required="required"></td>
+					<td>Emp_ID</td>
+					<td><input type="text" name="Emp_ID" required="required"></td>
 				</tr>
 				<tr>
-					<td>First Name</td>
-					<td><input type="text" name="fname" required="required"></td>
+					<td>Emp_first_name</td>
+					<td><input type="text" name="Emp_first_name" required="required"></td>
 				</tr>
 				<tr>
-					<td>Middle Name</td>
-					<td><input type="text" name="mname" required="required"></td>
+					<td>Emp_last_name</td>
+					<td><input type="text" name="Emp_last_name" required="required"></td>
 				</tr>
 				<tr>
-					<td>Last Name</td>
-					<td><input type="text" name="lname" required="required"></td>
+					<td>Emp_Date_of_Birth</td>
+					<td><input type="text" name="Emp_Date_of_Birth" required="required"></td>
 				</tr>
 				<tr>
-					<td>Guardian First Name</td>
-					<td><input type="text" name="gfname" required="required"></td>
+					<td>Emp_Date_of_Joining</td>
+					<td><input type="text" name="Emp_Date_of_Joining" required="required"></td>
 				</tr>
 				<tr>
-					<td>Guardian Middle Name</td>
-					<td><input type="text" name="gmname" required="required"></td>
+					<td>Emp_Dept_ID</td>
+					<td><input type="text" name="Emp_Dept_ID" required="required"></td>
 				</tr>
 				<tr>
-					<td>Guardian Last Name</td>
-					<td><input type="text" name="glname" required="required"></td>
+					<td>Emp_Grade</td>
+					<td><input type="text" name="Emp_Grade" required="required"></td>
 				</tr>
 				<tr>
-					<td>IsAdmin</td>
-					<td><select name="isadmin" required="required">
+					<td>Emp_Designation</td>
+					<td><input type="text" name="Emp_Designation" required="required"></td>
+				</tr>
+				<tr>
+					<td>Emp_Basic</td>
+					<td><input type="text" name="Emp_Basic" required="required"></td>
+				</tr>
+				
+				<tr>
+					<td>Emp_Gender</td>
+					<td><select name="Emp_Gender" required="required">
 							<option value="">---Select---</option>
-							<option value="Y">Yes</option>
-							<option value="N">No</option>
+							<option value="M">Male</option>
+							<option value="F">Female</option>
 					</select></td>
 				</tr>
 				<tr>
-					<td>Password</td>
-					<td><input type="password" name="password" required="required"></td>
+					<td>Emp_Marital_Status</td>
+					<td><select name="Emp_Marital_Status" required="required">
+							<option value="">---Select---</option>
+							<option value="Single">Single</option>
+							<option value="Married">Married</option>
+					</select></td>
 				</tr>
+				
+				<tr>
+					<td>Emp_Home_Address</td>
+					<td><input type="text" name="Emp_Home_Address" required="required"></td>
+				</tr>
+				
 				<tr>
 					<td><input type="submit"></td>
 					<td><input type="reset"></td>

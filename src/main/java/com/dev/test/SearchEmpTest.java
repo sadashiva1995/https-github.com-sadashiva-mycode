@@ -13,7 +13,7 @@ public class SearchEmpTest {
 		SessionFactory factory=HibernateUtils.getSessionFactory();
 		Session session=  factory.openSession();
 		EmpInfoDAO emp1=UserInfoDAOFactory.getDatabase();
-		Employee emp=null;
+		Employee emp=new Employee();
 
 		emp =emp1.searchEmp("1");
 		System.out.println(emp.getEmp_Contact_Num());	

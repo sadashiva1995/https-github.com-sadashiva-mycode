@@ -10,6 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="employee")
 public class Employee {
+	
  
 	@Column(name="Emp_ID")
 	@Id
@@ -18,15 +19,6 @@ public class Employee {
 	@Column(name="Emp_first_name")
 	String  emp_First_Name ;
 	
-	@Override
-	public String toString() {
-		return "Employee [emp_ID=" + emp_ID + ", emp_First_Name=" + emp_First_Name + ", emp_Last_Name=" + emp_Last_Name
-				+ ", emp_Date_of_Birth=" + emp_Date_of_Birth + ", emp_Date_of_Joining=" + emp_Date_of_Joining
-				+ ", emp_Dept_ID=" + emp_Dept_ID + ", emp_Grade=" + emp_Grade + ", emp_Designation=" + emp_Designation
-				+ ", emp_Basic=" + emp_Basic + ", emp_Gender=" + emp_Gender + ", emp_Marital_Status="
-				+ emp_Marital_Status + ", emp_Home_Address=" + emp_Home_Address + ", emp_Contact_Num=" + emp_Contact_Num
-				+ "]";
-	}
 
 	@Column(name="Emp_last_name")
 	String  emp_Last_Name ;   
@@ -164,7 +156,15 @@ public class Employee {
 	public void setEmp_Contact_Num(String emp_Contact_Num) {
 		this.emp_Contact_Num = emp_Contact_Num;
 	}
-
+	@Override
+	public String toString() {
+		return "Employee [emp_ID=" + emp_ID + ", emp_First_Name=" + emp_First_Name + ", emp_Last_Name=" + emp_Last_Name
+				+ ", emp_Date_of_Birth=" + emp_Date_of_Birth + ", emp_Date_of_Joining=" + emp_Date_of_Joining
+				+ ", emp_Dept_ID=" + emp_Dept_ID + ", emp_Grade=" + emp_Grade + ", emp_Designation=" + emp_Designation
+				+ ", emp_Basic=" + emp_Basic + ", emp_Gender=" + emp_Gender + ", emp_Marital_Status="
+				+ emp_Marital_Status + ", emp_Home_Address=" + emp_Home_Address + ", emp_Contact_Num=" + emp_Contact_Num
+				+ "]";
+	}
 		
    	
 }

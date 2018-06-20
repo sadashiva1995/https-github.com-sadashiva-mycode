@@ -14,11 +14,16 @@ public class LoginTest {
 		SessionFactory factory=HibernateUtils.getSessionFactory();
 		Session session=  factory.openSession();
 		EmpInfoDAO emp1=UserInfoDAOFactory.getDatabase();
-		Employee emp=null;
+		Employee emp=new Employee();
 
 		emp =emp1.login("1", "1111");
-		if(emp!=null)
-		System.out.println("Login success" );	
+		if(emp!=null) {
+			System.out.println("Login success" );	
+		}
+		else {
+			System.out.println("Login failed" );	
+		}
+		
 		
 
 		//session.save(emp);

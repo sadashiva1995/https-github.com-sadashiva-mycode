@@ -16,7 +16,7 @@ public class EmpDetailsTest {
 		SessionFactory factory=HibernateUtils.getSessionFactory();
 		Session session=  factory.openSession();
 		EmpInfoDAO emp1=UserInfoDAOFactory.getDatabase();
-		Employee emp=null;
+		Employee emp=new Employee();
 
 		List<Employee> employee  =emp1.empDetails();
 		for (Employee e : employee) {

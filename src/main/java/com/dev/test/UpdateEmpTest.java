@@ -13,7 +13,7 @@ public class UpdateEmpTest {
 	SessionFactory factory=HibernateUtils.getSessionFactory();
 	Session session=  factory.openSession();
 	EmpInfoDAO emp1=UserInfoDAOFactory.getDatabase();
-	Employee emp=null;
+	Employee emp=new Employee();
 
 	boolean b=emp1.updateEmp("Emp_ID");
 	if(b==true){
@@ -22,7 +22,7 @@ public class UpdateEmpTest {
 		System.out.println(" Update unsuccessfull");
 	}
 
-	session.save(emp);
+	//session.save(emp);
 
 	session.beginTransaction().commit();
 }
