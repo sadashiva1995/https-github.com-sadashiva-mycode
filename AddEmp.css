@@ -1,0 +1,22 @@
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.cl{
+    background-color: #f8f8f8;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+.cll{
+    color: #ff273c;
+}
+a{
+    color: #f8ff26;
+    text-decoration-line: no-underline;
+}
